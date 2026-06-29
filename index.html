@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compasse — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Compasse app." />
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+      color: #1e1e1e;
+      background: #faf7f2;
+    }
+    h1 { font-size: 1.9rem; margin-bottom: 0.2em; }
+    h2 { font-size: 1.25rem; margin-top: 2em; }
+    .updated { color: #5a5a5a; font-size: 0.95rem; margin-top: 0; }
+    .callout {
+      background: #fff;
+      border: 1px solid #e5dfd2;
+      border-left: 4px solid #3b82a0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 20px 0;
+    }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5dfd2; vertical-align: top; }
+    th { font-size: 0.9rem; }
+    a { color: #2c6b86; }
+    code { background: #f1ece3; padding: 1px 5px; border-radius: 4px; }
+    footer { margin-top: 3em; color: #5a5a5a; font-size: 0.9rem; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #14110d; color: #ece7df; }
+      .callout { background: #1d1a15; border-color: #3a342a; }
+      th, td { border-color: #3a342a; }
+      code { background: #26221b; }
+      .updated, footer { color: #b8b0a3; }
+      a { color: #6fb6cf; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Compasse — Privacy Policy</h1>
+  <p class="updated">Last updated: June 2026</p>
+
+  <p>
+    Compasse (“Compasse,” “we,” “us”) is a voice-friendly companion app for an
+    older adult, set up and managed by a family member (the “caregiver”). This
+    policy explains what we collect, why, who processes it, and your choices.
+    Questions or requests: <a href="mailto:Aidan@revisesolutions.com">Aidan@revisesolutions.com</a>.
+  </p>
+
+  <div class="callout">
+    <strong>Compasse is not a medical device, a safety-monitoring service, or an
+    emergency system.</strong> In any emergency, call 911 (or your local
+    emergency number) directly.
+  </div>
+
+  <h2>Who this policy is for</h2>
+  <ul>
+    <li><strong>Caregivers</strong> create the account and enter information from their phone.</li>
+    <li><strong>The older adult (“the resident”)</strong> uses the tablet. They do not create an account; the caregiver sets everything up with a one-time code.</li>
+  </ul>
+  <p>
+    By using Compasse, the caregiver confirms they are authorized to provide the
+    resident’s information and that the resident is aware the assistant listens
+    and records when spoken to.
+  </p>
+
+  <h2>What we collect</h2>
+  <p><strong>You provide:</strong></p>
+  <ul>
+    <li><strong>Account details</strong> — caregiver name, email, and phone number.</li>
+    <li><strong>Resident profile</strong> — the name you choose for them and their time zone.</li>
+    <li><strong>Care content</strong> — medications, appointments/events, reminders, reassurance messages, and the short answers/phrases caregivers record.</li>
+    <li><strong>Voice recordings</strong> — (a) what the resident says to the assistant, so it can understand and respond, and (b) voice messages and phrases caregivers record.</li>
+  </ul>
+  <p><strong>Collected automatically:</strong></p>
+  <ul>
+    <li><strong>Device &amp; usage data</strong> — push-notification token, app version, basic device status (e.g. a “heartbeat” so caregivers know the tablet is online), and diagnostic logs.</li>
+    <li><strong>Crash reports</strong> — if a crash occurs, technical error data to help us fix it.</li>
+  </ul>
+  <p>
+    We do <strong>not</strong> collect precise location, contacts, or advertising
+    identifiers, and we do <strong>not</strong> use the information for
+    advertising or sell it.
+  </p>
+
+  <h2>How we use it</h2>
+  <ul>
+    <li>Run the service: show the board, deliver reminders and messages, answer the resident in a calm voice, place caregiver calls, and notify the caregiver of key events (a missed medication, a check-in answer, a call request, and a “tablet offline” notice).</li>
+    <li>Keep the app working and improve it during the trial (diagnostics, fixing bugs).</li>
+  </ul>
+
+  <h2>Who processes your information</h2>
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Purpose</th><th>What they handle</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Supabase</strong></td><td>Hosting, database, authentication, file storage</td><td>All account/care data and voice recordings, stored securely and tied to your family’s account</td></tr>
+      <tr><td><strong>OpenAI</strong></td><td>Speech-to-text, assistant responses, text-to-speech</td><td>Audio and text submitted to generate a response. Per our agreement, this is not used to train their models and is retained only transiently for abuse monitoring</td></tr>
+      <tr><td><strong>Expo / Apple Push</strong></td><td>Push notifications</td><td>The caregiver’s device token and notification text</td></tr>
+      <tr><td><strong>Sentry</strong></td><td>Crash reporting</td><td>Technical error/diagnostic data (no voice content)</td></tr>
+    </tbody>
+  </table>
+  <p>Only your family’s account and the Compasse team can access your family’s information.</p>
+
+  <h2>How it’s protected</h2>
+  <p>
+    Information is stored with our service provider (Supabase) with access
+    controls (row-level security) so one family cannot access another’s data, and
+    is encrypted in transit. Service credentials are kept server-side and are
+    never shipped in the app.
+  </p>
+
+  <h2>How long we keep it</h2>
+  <p>
+    We keep your information while your account is active and for the duration of
+    the trial. You can ask us to delete it at any time (below), and we delete
+    trial data when a family leaves the program.
+  </p>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Stop anytime</strong> — you can stop using Compasse for any reason.</li>
+    <li><strong>Access or delete</strong> — email <a href="mailto:Aidan@revisesolutions.com">Aidan@revisesolutions.com</a> to request a copy or deletion of your family’s information, including voice recordings. We will confirm when deletion is complete.</li>
+    <li>Depending on where you live, you may have additional rights (to access, correct, or delete personal information). Contact us and we’ll honor them.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    Compasse is intended for adults. It is not directed to children under 13 and
+    we do not knowingly collect their information.
+  </p>
+
+  <h2>Recording notice</h2>
+  <p>
+    The assistant records audio only when the resident speaks to it (e.g. taps to
+    talk). Caregivers choose what phrases and messages to record. The caregiver
+    confirms the resident is aware of, and consents to, this recording for the
+    purpose of using Compasse.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy as Compasse evolves. We’ll post the updated version
+    here and revise the “Last updated” date above.
+  </p>
+
+  <h2>Contact</h2>
+  <p><strong>Aidan</strong> — <a href="mailto:Aidan@revisesolutions.com">Aidan@revisesolutions.com</a></p>
+
+  <footer>© 2026 Compasse. This page is the public privacy policy for the Compasse app.</footer>
+</body>
+</html>
